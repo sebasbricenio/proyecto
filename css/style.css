@@ -1,0 +1,46 @@
+*{
+  box-sizing: border-box; /*le quito todo borde que haya */
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  width: 40%;
+  height: 90vh;
+  float:right;
+  background-image: url(../imagenes/logo_proyecto.jpg);
+}
+
+.usuario .email{
+  width: 50%;
+  float: left;
+  margin: auto;
+}
+
+
+.contrasenia{
+  width: 50%;
+  float: right;
+  margin: auto;
+}
+
+.container{
+  width: 60%;
+  float: left;
+  height: 90vh;
+}
+
+.cabecera{
+  background-color: red;
+  height: 10vh;
+}
+
+body{
+  width: 100%;
+}
+
+footer{
+  float: left;
+  width: 50%;
+  position: relative;
+}
