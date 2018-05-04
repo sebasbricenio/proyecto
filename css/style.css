@@ -10,6 +10,9 @@ header, .formulario, footer{
     display: block;
 }
 
+p,h1,h3,a{
+	color:#E3E7F1;
+}
 .inicio{
 margin-top: 25%;
 }
@@ -24,12 +27,15 @@ header, footer{
   margin: 0 auto;
   height: 10vh;
     box-sizing: border-box;
-  background-color: red;
+  background-color: #06319A;
 }
 
 .formulario{
-  background-image: url(../imagenes/logo_proyecto.jpg);
+  background-image: url(../imagenes/imagen.jpg);
   background-size: contain;
+       background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -43,6 +49,7 @@ header, footer{
   margin: auto;
   box-sizing: border-box;
   display: block;
+  overflow: scroll;
 }
 
 .texto, .boton_registro, .boton_borrar, .boton_inicio, .texto_sesion{
@@ -110,6 +117,7 @@ footer ul, ul{
 @media(min-width:769px){  /* responsive para mobile */
   .container{
     width: 50%;
+	overflow: hidden;
   }
 
   .texto{
