@@ -5,10 +5,13 @@
 }
 
 header, .formulario, footer{
+    min-width: 320px;
+
     margin: 0 auto;
     width: 100%;
     display: block;
 }
+
 
 p,h1,h3,a{
 	color:#E3E7F1;
@@ -25,50 +28,64 @@ margin-top: 25%;
 header, footer{
   padding: 10px;
   margin: 0 auto;
-  height: 10vh;
-    box-sizing: border-box;
+  height: 70px;
+  box-sizing: border-box;
   background-color: #06319A;
 }
-
+.cierre_sesion{
+  float:right;
+  margin-top: -20px;
+}
 .formulario{
   background-image: url(../imagenes/imagen.jpg);
   background-size: contain;
-       background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:calc(100vh - 140px);
 }
 
+.formulario_perfil{
+  background-image: url(../imagenes/imagen.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:calc(100vh - 70px);
+}
+
+.perfil{
+  float:left;
+}
 .recordar{
-  margin-top: 20px;
+  margin-top: 0px;
   display: none;
+
 }
 .container{
   width: 90%;
-  height: 79vh;
+  /*height: 79vh;*/
   margin: auto;
   box-sizing: border-box;
   display: block;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .texto, .boton_registro, .boton_borrar, .boton_inicio, .texto_sesion{
   width: 100%;
   display: block;
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 5px;
+  padding: 5px;
 
 }
 
 h1,h3{
 text-align: center;
-padding: 10px;
+padding: 5px;
 }
-
 
 footer ul li a{
     color: white;/*le digo al footer que sea un bloque*/
-
 }
 
 footer ul, ul{
@@ -85,13 +102,13 @@ footer ul, ul{
   float: right;
 }
 
-@media(min-width:426px){  /* responsive para mobile */
+@media(min-width:426px){
   .container{
     width: 60%;
   }
 
   .texto,.inicio_sesion{
-    margin-top: 30px;
+    margin-top: 10px;
   }
 
    .botones{
@@ -101,51 +118,55 @@ footer ul, ul{
 
   .boton_borrar{
     width: 40%;
-    margin-top: 30px;
+    margin-top: 10px;
     float: right;
   }
 
   .boton_registro{
     width: 40%;
-    margin-top: 30px;
+    margin-top: 10px;
     float: left;
   }
 
 
 }
 
-@media(min-width:769px){  /* responsive para mobile */
+@media(min-width:769px){
   .container{
     width: 50%;
 	overflow: hidden;
   }
 
   .texto{
-    margin-top: 40px;
+    margin-top: 10px;
   }
 
   .boton_inicio{
-    width: 30%;
+    width: 33%;
+    padding: 10px;
     float: right;
+
   }
   .texto_sesion{
-    width: 34%;
+    width: 33%;
     display: inline-block;
     padding: 10px;
   }
-  .boton_borrar{
+  .boton_borrar,.boton_borrar{
 
-    margin-top: 40px;
+    margin-top: 15px;
   }
+
 
   .recordar{
     display: inline-block;
     float: right;
     margin-top:  -13px;
-    padding: 0px;
+
   }
-  .boton_registro{
-    margin-top: 40px;
+
+  .boton_archivo{
+    margin-top: 20px;
   }
   footer ul li{
     margin-top: 10px;
