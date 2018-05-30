@@ -7,18 +7,18 @@ if (estaLogueado()) {
 }
 $email = '';
 
-$errores = [];
+$mensaje_error = [];
 
 if ($_POST) {
     $email = trim($_POST['correo']);
 
-    $errores = validarMail($_POST);
+    $mensaje_error = validarMail($_POST);
 
-    if (empty($errores)) {
+    /*if (empty($errores)) {
         MandarMail($_POST);
         header('location:index.php');
         exit;
-    }
+    }*/
 }
 
  ?>
@@ -48,8 +48,8 @@ if ($_POST) {
 
 
 
-            <input type="email" name="correo" class="texto" value="" placeholder="Correo Electronico">
-            </label>
+            <input type="email" name="correo" class="texto" value="<?php print $email;?>" placeholder="Correo Electronico"> <?php isset($mensaje_error["correo"]) ? print $mensaje_error["correo"] : "";?></span>
+          <br>
             <input type="submit" name="registro" class="boton_registro" value="Enviar">
             <input type="reset" name="borrar" class="boton_borrar" value="Borrar">
             </div>

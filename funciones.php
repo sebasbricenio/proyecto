@@ -170,10 +170,10 @@ function validarMail($datos){
       $array_ErroresADevolver['correo'] = 'Correo Invalido, por favor ingrese un correo correcto';
   }elseif (!mail_existente($mail)) {
       $array_ErroresADevolver['correo'] = 'Este correo no esta registrado';
-  }else{
+  }/*else{
     $id = ObtenerId($mail);
     usuario_cambio_pass($id);
-  }
+  }*/
 
   return $array_ErroresADevolver;
 }
@@ -222,7 +222,7 @@ function traer_todos_ID($id){
     return false;
 }
 
-function ObtenerId($mail){
+/*function ObtenerId($mail){
     $todos_usuarios = traer_todos_datos();
 
     foreach ($todos_usuarios as $usuarios) {
@@ -230,7 +230,7 @@ function ObtenerId($mail){
             return $usuarios['id'];
         }
     }
-}
+}*/
 function guardarFoto($imagen){
     $errores = [];
 
